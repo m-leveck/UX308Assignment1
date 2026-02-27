@@ -30,12 +30,12 @@ describe("Tests all stages of a coffee order", function () {
         expect(aResults[0]).toBe("Regular milk or oat milk?");
     });
 
-    it("after milk choice, asks about scone", function () {
+    it("after milk choice, asks about bagel", function () {
         handleInput("hello");
         handleInput("yes");
         handleInput("hot");
         const aResults = handleInput("oat milk");
-        expect(aResults[0]).toBe("Would you like a scone with that?");
+        expect(aResults[0]).toBe("Would you like a bagel with that?");
     });
 
     it("completes the order", function () {

@@ -25,7 +25,7 @@ function coffeeDecision(sInput) {
     aReturn.push("Iced or hot?");
   } else {
     currentState = welcoming;
-    aReturn.push("Maybe next time!");
+    aReturn.push("Maybe next time. Have a good day!");
   }
 
   return aReturn;
@@ -42,13 +42,13 @@ function temperature(sInput) {
 // STATE 4: Milk choice
 function milkChoice(sInput) {
   let aReturn = [];
-  currentState = sconeChoice;
-  aReturn.push("Would you like a scone with that?");
+  currentState = bagelChoice;
+  aReturn.push("Would you like a bagel with that?");
   return aReturn;
 }
 
-// STATE 5: Scone
-function sconeChoice(sInput) {
+// STATE 5: Up sell Bagel
+function bagelChoice(sInput) {
   let aReturn = [];
   currentState = welcoming;
   aReturn.push("Great! Your order will be ready in 10 minutes.");
